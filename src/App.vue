@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <Test msg="Test msg"/>
+    <Homepage msg="Homepage msg"/>
   </div>
 </template>
 
 <script>
-import Test from './components/Test.vue'
+import Homepage from './components/Homepage.vue'
 
 export default {
   name: 'app',
