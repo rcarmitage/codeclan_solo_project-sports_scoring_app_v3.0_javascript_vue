@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Homepage/>
-    <Teams/>
+    <Homepage />
+    <Teams v-bind:teams="teams" />
   </div>
 </template>
 
@@ -14,6 +14,24 @@ export default {
   components: {
     Homepage,
     Teams
+  },
+  data() {
+    return {
+      teams: [
+        {
+          id: 1,
+          name: "TestTeam01"
+        },
+        {
+          id: 2,
+          name: "TestTeam02"
+        },
+        {
+          id: 3,
+          name: "TestTeam03"
+        }
+      ]
+    }
   }
 }
 </script>
@@ -29,10 +47,10 @@ export default {
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
-html {
+/* html {
   box-sizing: border-box;
   color: var(--dark);
-}
+} */
 
 body {
   background: #abcad6;
@@ -41,12 +59,12 @@ body {
 }
 
 @media screen {
-  .header-title {
+  /* .header-title {
     font-size: 3rem;
     text-align: left;
     grid-area: header-title;
     margin: 0;
-  }
+  } */
 
   .inspired-by-codeclan {
     font-size: 0.8rem;
