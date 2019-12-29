@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Homepage/>
-    <Teams/>
+    <Homepage />
+    <Teams v-bind:teams="teams" />
   </div>
 </template>
 
@@ -14,6 +14,24 @@ export default {
   components: {
     Homepage,
     Teams
+  },
+  data() {
+    return {
+      teams: [
+        {
+          id: 1,
+          name: "TestTeam01"
+        },
+        {
+          id: 2,
+          name: "TestTeam02"
+        },
+        {
+          id: 3,
+          name: "TestTeam03"
+        }
+      ]
+    }
   }
 }
 </script>

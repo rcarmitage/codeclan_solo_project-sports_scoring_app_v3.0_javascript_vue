@@ -29,10 +29,7 @@
 
 <script>
 export default {
-    name: 'Homepage',
-    props: {
-        msg: String
-    }
+    name: 'Homepage'
 }
 </script>
 
