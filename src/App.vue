@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Homepage msg="Homepage info goes here"/>
-    <Teams msg="Teams info goes here"/>
+    <Homepage/>
+    <Teams/>
   </div>
 </template>
 
