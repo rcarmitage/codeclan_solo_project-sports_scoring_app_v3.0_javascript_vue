@@ -1,40 +1,19 @@
 <template>
   <div id="app">
-    <!-- <title>Ultimate Hackathon League</title> -->
-    <h1>Ultimate Hackathon League</h1>
-    <h2 class="inspired-by-codeclan">Inspired by CodeClan</h2>
-    <nav class="main-nav">
-        <ul>
-            <li>
-              <a class="btn">Home</a>
-            </li>
-            <li>
-              <a class="btn">Teams</a>
-            </li>
-            <li>
-              <a class="btn">Fixtures</a>
-            </li>
-            <li>
-              <a class="btn">League Table</a>
-            </li>
-            <li>
-              <a class="btn">About</a>
-            </li>
-        </ul>
-    </nav>
-    <footer>
-        <p>&copy; 2019 Made by Rob</p>
-    </footer>
+    <Homepage msg="Homepage info goes here"/>
+    <Teams msg="Teams info goes here"/>
   </div>
 </template>
 
 <script>
 import Homepage from './components/Homepage.vue'
+import Teams from './components/Teams.vue'
 
 export default {
   name: 'app',
   components: {
-    Homepage
+    Homepage,
+    Teams
   }
 }
 </script>
