@@ -16,17 +16,17 @@ const routes = [
   {
     path: '/teams',
     name: 'teams',
-    component: Teams
+    component: () => import('../views/Teams.vue')
   },
   {
     path: '/fixtures',
     name: 'fixtures',
-    component: Fixtures
+    component: () => import('../views/Fixtures.vue')
   },
   {
     path: '/league_table',
     name: 'league_table',
-    component: LeagueTable
+    component: () => import('../views/LeagueTable.vue)
   },
   {
     path: '/about',
