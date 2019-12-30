@@ -17,7 +17,7 @@ export default {
     components: {
         TeamDetails
     },
-    props: ["teams"]
+    props: ["teams"],
 }
 </script>
 
