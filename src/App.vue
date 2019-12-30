@@ -1,37 +1,17 @@
 <template>
   <div id="app">
-    <Homepage />
-    <Teams v-bind:teams="teams" />
+    <Header />
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Homepage from './components/Homepage.vue'
-import Teams from './components/Teams.vue'
+import Header from './components/Header.vue';
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    Homepage,
-    Teams
-  },
-  data() {
-    return {
-      teams: [
-        {
-          id: 1,
-          name: "TestTeam01"
-        },
-        {
-          id: 2,
-          name: "TestTeam02"
-        },
-        {
-          id: 3,
-          name: "TestTeam03"
-        }
-      ]
-    }
+    Header
   }
 }
 </script>
@@ -58,6 +38,21 @@ body {
   line-height: 1.4;
 }
 
+.btn {
+  background: var(--primary-blue);
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  text-align: left;
+  color: var(--dark);
+  font-size: 0.9rem;
+  box-shadow: var(--shadow);
+}
+  
+.btn:hover {
+  background: var(--dark);
+  color: var(--primary-blue);
+}
+
 @media screen {
   /* .header-title {
     font-size: 3rem;
@@ -72,7 +67,7 @@ body {
     margin: 0;
   }
 
-  .main-nav ul {
+  #nav {
     display: grid;
     grid-gap: 10px;
     padding: 0;
@@ -80,7 +75,7 @@ body {
     grid-template-columns: repeat(5, 1fr);
   }
   
-  .main-nav a {
+  /* .nav btn {
     background: var(--primary-blue);
     display: block;
     text-decoration: none;
@@ -92,11 +87,9 @@ body {
     box-shadow: var(--shadow);
   }
   
-  .main-nav a:hover {
+  .nav btn:hover {
     background: var(--dark);
     color: var(--primary-blue);
-  }
-
+  } */
 }
-
 </style>
