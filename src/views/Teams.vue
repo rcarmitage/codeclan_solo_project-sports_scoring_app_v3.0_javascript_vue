@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="teams">
     <Teams v-bind:teams="teams" />
   </div>
 </template>

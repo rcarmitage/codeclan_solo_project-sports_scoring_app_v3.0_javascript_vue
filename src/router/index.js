@@ -21,26 +21,17 @@ const routes = [
   {
     path: '/fixtures',
     name: 'fixtures',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Fixtures.vue')
+    component: () => import('../views/Fixtures.vue')
   },
   {
     path: '/league_table',
     name: 'league_table',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/LeagueTable.vue')
+    component: () => import('../views/LeagueTable.vue')
   },
   {
     path: '/teams',
     name: 'teams',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Teams.vue')
+    component: () => import('../views/Teams.vue')
   }
 ]
 
