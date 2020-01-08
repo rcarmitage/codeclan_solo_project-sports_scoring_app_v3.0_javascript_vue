@@ -9,9 +9,6 @@
       <router-link to="/league_table" class="btn">League Table</router-link>
       <router-link to="/about" class="btn">About</router-link>
     </div>
-    <footer>
-        <p>&copy; 2019 Made by Rob</p>
-    </footer>
     </div>
 </template>
 

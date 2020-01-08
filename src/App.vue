@@ -2,6 +2,7 @@
   <div id="app">
     <Header />
     <router-view/>
+    <p id="footer">&copy; 2020 Made by Rob</p>
   </div>
 </template>
 
@@ -25,17 +26,16 @@ export default {
   --light-blue: #3385ff;
   --light: #fff;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  /* display: flex;
+  flex-direction: column;
+  height: 100%; */
 }
 
-/* html {
-  box-sizing: border-box;
-  color: var(--dark);
-} */
-
-body {
+html, body {
   background: #abcad6;
   margin: 30px 50px;
   line-height: 1.4;
+  height: 100%;
 }
 
 .btn {
@@ -53,43 +53,22 @@ body {
   color: var(--primary-blue);
 }
 
-@media screen {
-  /* .header-title {
-    font-size: 3rem;
-    text-align: left;
-    grid-area: header-title;
-    margin: 0;
-  } */
-
-  .inspired-by-codeclan {
-    font-size: 0.8rem;
-    grid-area: inspired-by-codeclan;
-    margin: 0;
-  }
-
-  #nav {
-    display: grid;
-    grid-gap: 10px;
-    padding: 0;
-    list-style: none;
-    grid-template-columns: repeat(5, 1fr);
-  }
-  
-  /* .nav btn {
-    background: var(--primary-blue);
-    display: block;
-    text-decoration: none;
-    padding: 0.3rem 0.4rem;
-    text-align: center;
-    color: var(--dark);
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    box-shadow: var(--shadow);
-  }
-  
-  .nav btn:hover {
-    background: var(--dark);
-    color: var(--primary-blue);
-  } */
+.inspired-by-codeclan {
+  font-size: 0.8rem;
+  grid-area: inspired-by-codeclan;
+  margin: 0;
 }
+
+#nav {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#footer {
+  /* flex-shrink: 0; */
+}
+
 </style>
