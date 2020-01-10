@@ -1,6 +1,7 @@
 <template>
     <div>
-        <p>{{team.name}}</p>
+        <!-- <p>{{team.name}}</p> -->
+        <p>Teams go here</p>
     </div>
 </template>
 

@@ -2,7 +2,7 @@
     <div>
         <h3>Teams</h3>
         <!-- Add team button, list all teams, edit and delete team buttons next to each team -->
-        <a class="btn">Add a Team</a>
+        <!-- <a class="btn">Add a Team</a> -->
         <div v-bind:key="team.id" v-for="team in teams">
             <TeamDetails v-bind:team="team" />
         </div>
