@@ -7,8 +7,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "postinstall": "npm run prod"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "core-js": "^3.4.3",
