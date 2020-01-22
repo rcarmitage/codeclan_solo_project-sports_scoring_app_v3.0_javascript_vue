@@ -2,7 +2,7 @@ module.exports = {
   presets: [
     '@vue/cli-plugin-babel/preset'
   ],
-  devServer: [
+  devServer: {
     disableHostCheck: true
-  ]
+  }
 }
